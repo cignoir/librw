@@ -1,3 +1,7 @@
+#ifndef RWENGINE_H_INCLUDED // または RW_ENGINE_H などユニークな名前
+#define RWENGINE_H_INCLUDED
+#pragma once // 多くのコンパイラで有効なインクルードガード
+
 namespace rw {
 
 // uhhhm..... why are these not actual functions?
@@ -273,3 +277,5 @@ namespace null {
 }
 
 }
+
+#endif // RWENGINE_H_INCLUDED

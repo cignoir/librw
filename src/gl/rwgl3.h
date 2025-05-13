@@ -1,3 +1,7 @@
+#ifndef RWGL3_H_INCLUDED
+#define RWGL3_H_INCLUDED
+#pragma once
+
 #ifdef RW_GL3
 #include "glad/glad.h"
 #ifdef LIBRW_SDL2
@@ -296,3 +300,5 @@ void registerNativeRaster(void);
 
 }
 }
+
+#endif

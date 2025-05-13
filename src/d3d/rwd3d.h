@@ -1,3 +1,7 @@
+#ifndef RWD3D_H_INCLUDED
+#define RWD3D_H_INCLUDED
+#pragma once
+
 #ifdef RW_D3D9
 #ifdef WITH_D3D
 #include <d3d9.h>
@@ -419,3 +423,5 @@ void destroyDefaultShaders(void);
 
 }
 }
+
+#endif

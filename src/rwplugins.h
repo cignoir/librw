@@ -1,3 +1,7 @@
+#ifndef RWPLUGINS_H_INCLUDED
+#define RWPLUGINS_H_INCLUDED
+#pragma once
+
 namespace rw {
 
 /*
@@ -250,3 +254,5 @@ int32 skinSplitDataSize(Skin *skin);
 void registerSkinPlugin(void);
 
 }
+
+#endif // RWPLUGINS_H_INCLUDED

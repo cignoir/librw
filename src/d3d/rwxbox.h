@@ -1,3 +1,7 @@
+#ifndef RWXBOX_H_INCLUDED
+#define RWXBOX_H_INCLUDED
+#pragma once
+
 namespace rw {
 namespace xbox {
 
@@ -193,3 +197,5 @@ enum {
 
 }
 }
+
+#endif

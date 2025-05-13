@@ -1,3 +1,7 @@
+#ifndef RWOBJECTS_H_INCLUDED
+#define RWOBJECTS_H_INCLUDED
+#pragma once
+
 #include <stddef.h>
 
 namespace rw {
@@ -901,5 +905,6 @@ struct TexDictionary
 	static void setCurrent(TexDictionary *txd);
 	static TexDictionary *getCurrent(void);
 };
-
 }
+
+#endif // RWOBJECTS_H_INCLUDED

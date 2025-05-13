@@ -1,3 +1,7 @@
+#ifndef RWCHARSET_H_INCLUDED
+#define RWCHARSET_H_INCLUDED
+#pragma once
+
 namespace rw {
 
 struct Charset
@@ -23,3 +27,4 @@ private:
 };
 
 }
+#endif

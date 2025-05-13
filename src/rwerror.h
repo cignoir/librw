@@ -1,3 +1,7 @@
+#ifndef RWERROR_H_INCLUDED  // ★ ファイルごとにユニークなマクロ名にする (例: RW_FILENAME_H)
+#define RWERROR_H_INCLUDED
+#pragma once
+
 namespace rw {
 
 struct Error
@@ -23,3 +27,5 @@ char *dbgsprint(uint32 code, ...);
 }while(0)
 
 }
+
+#endif // RWERROR_H_INCLUDED

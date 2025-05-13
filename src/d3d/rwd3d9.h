@@ -1,3 +1,7 @@
+#ifndef RWD3D9_H_INCLUDED
+#define RWD3D9_H_INCLUDED
+#pragma once
+
 namespace rw {
 namespace d3d9 {
 
@@ -110,3 +114,5 @@ uint32 getSizeNativeTexture(Texture *tex);
 
 }
 }
+
+#endif

@@ -1,3 +1,7 @@
+#ifndef RWRENDER_H_INCLUDED
+#define RWRENDER_H_INCLUDED
+#pragma once
+
 namespace rw {
 
 // Render states
@@ -138,3 +142,4 @@ void End(void);
 
 }
 
+#endif

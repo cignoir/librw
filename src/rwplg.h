@@ -1,3 +1,7 @@
+#ifndef RWPLG_H_INCLUDED
+#define RWPLG_H_INCLUDED
+#pragma once
+
 namespace rw {
 
 #define PLUGINOFFSET(type, base, offset) \
@@ -83,3 +87,5 @@ struct Plugin
 
 
 }
+
+#endif

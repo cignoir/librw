@@ -1,3 +1,7 @@
+#ifndef RWD3D8_H_INCLUDED
+#define RWD3D8_H_INCLUDED
+#pragma once
+
 namespace rw {
 namespace d3d8 {
 
@@ -72,3 +76,5 @@ uint32 getSizeNativeTexture(Texture *tex);
 
 }
 }
+
+#endif

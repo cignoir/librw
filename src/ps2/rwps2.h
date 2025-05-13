@@ -1,3 +1,7 @@
+#ifndef RWPS2_H_INCLUDED
+#define RWPS2_H_INCLUDED
+#pragma once
+
 namespace rw {
 
 #ifdef RW_PS2
@@ -279,3 +283,5 @@ uint32 getSizeNativeTexture(Texture *tex);
 
 }
 }
+
+#endif

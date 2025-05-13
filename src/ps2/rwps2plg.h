@@ -1,3 +1,7 @@
+#ifndef RWPS2PLG_H_INCLUDED
+#define RWPS2PLG_H_INCLUDED
+#pragma once
+
 namespace rw {
 namespace ps2 {
 
@@ -25,3 +29,5 @@ void skinPostCB(MatPipeline*, Geometry*);
 
 }
 }
+
+#endif
