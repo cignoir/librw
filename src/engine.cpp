@@ -472,11 +472,9 @@ void im3DRenderPrimitive(PrimitiveType primType) { }
 void im3DRenderIndexedPrimitive(PrimitiveType primType, void *indices, int32 numIndices) { }
 void im3DEnd(void) { }
 
-Raster*
-rasterCreate(Raster*)
+Raster* rasterCreate(Raster* ras)
 {
-	assert(0 && "rasterCreate not implemented");
-	return nil;
+	return ras;
 }
 
 uint8*
