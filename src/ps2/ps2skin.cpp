@@ -29,12 +29,21 @@ skinOpen(void *o, int32, int32)
 }
 
 static void*
-skinClose(void *o, int32, int32)
+skinClose(void* o, int32, int32)
 {
-	((ObjPipeline*)skinGlobals.pipelines[PLATFORM_PS2])->groupPipeline->destroy();
-	((ObjPipeline*)skinGlobals.pipelines[PLATFORM_PS2])->groupPipeline = nil;
-	((ObjPipeline*)skinGlobals.pipelines[PLATFORM_PS2])->destroy();
-	skinGlobals.pipelines[PLATFORM_PS2] = nil;
+	ObjPipeline* ps2SkinPipeline = (ObjPipeline*)skinGlobals.pipelines[PLATFORM_PS2];
+	if (ps2SkinPipeline) {
+		if (ps2SkinPipeline->groupPipeline) {
+			ps2SkinPipeline->groupPipeline->destroy();
+			ps2SkinPipeline->groupPipeline = nil;
+		}
+		ps2SkinPipeline->destroy();
+		skinGlobals.pipelines[PLATFORM_PS2] = nil;
+	}
+	else {
+		// Optionally log that the PS2 skin pipeline was already null or not initialized
+		// printf("rw::ps2::skinClose: skinGlobals.pipelines[PLATFORM_PS2] was null, nothing to destroy.\n");
+	}
 	return o;
 }
 
